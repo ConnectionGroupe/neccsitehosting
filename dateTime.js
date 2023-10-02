@@ -21,3 +21,18 @@ function updateClassDate() {
     });
 }
 document.addEventListener('DOMContentLoaded', updateClassDate);
+
+
+window.onscroll = function() {stickFunc()};
+
+var navbar = document.getElementById("topSchedule");
+
+var sticky = navbar.offsetTop;
+
+function stickFunc() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
