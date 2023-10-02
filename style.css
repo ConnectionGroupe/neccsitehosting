@@ -1,0 +1,85 @@
+.sect {
+    margin: auto;
+    font-family: 'Poppins';
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    background-color: #000068;
+}
+
+.containerSchedule {
+    width: 85%;
+    height: 1.5in;
+    display: flex;
+    border: 10px solid #000068;
+    background-color: #f7f7f7;
+
+
+}
+
+.isBlue {
+    background-color: #00fcf1;
+    width: 2%;
+}
+
+.isYellow {
+    background-color: #fcff00;
+    width: 2%;
+}
+
+
+.logo {
+    width: 1in;
+    height: 1in;
+}
+
+.logo-img {
+    width: 1in;
+    height: 1in;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: auto;
+    flex: 4;
+}
+
+.score-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 2.5%;
+    flex: 2;
+}
+
+.left-aligned {
+    text-align: left;
+}
+
+.center-aligned {
+    text-align: center;
+}
+
+.right-aligned {
+    text-align: right;
+}
+
+h1,
+h2,
+h4 {
+    margin: 0;
+}
+
+.longName {
+    display: contents;
+}
+
+.shortName {
+    display: none;
+}
