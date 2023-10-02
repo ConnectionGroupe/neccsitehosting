@@ -1,39 +1,100 @@
 
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>OUR TEST PAGE</title>
+    <title>Our Test Page</title>
+    <style>
+.sect {
+    margin: auto;
+    font-family: Poppins,serif;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    background-color: #000068;
+}
+
+.containerSchedule {
+    width: 100%;
+    height: 1.5in;
+    display: flex;
+    border: 10px solid #000068;
+    background-color: #f7f7f7;
+
+
+}
+
+.isBlue {
+    background-color: #00fcf1;
+    width: 2%;
+}
+
+.isYellow{
+    background-color: #fcff00;
+    width: 2%;
+}
+
+
+.logo {
+    width: 1in;
+    height: 1in;
+}
+
+.logo-img {
+    width: 1in;
+    height: 1in;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: auto;
+    flex: 4;
+}
+
+.score-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 2.5%;
+    flex: 2;
+}
+
+.left-aligned {
+    text-align: left;
+}
+
+.center-aligned {
+    text-align: center;
+}
+
+.right-aligned {
+    text-align: right;
+}
+
+h1,
+h2,
+h4 {
+    margin: 0;
+}
+
+.longName {
+    display: contents;
+}
+
+.shortName {
+    display: none;
+}
+</style>
 </head>
 <body>
 <div class = "sect">
 <div class="schedule containerSchedule" onclick="">
-    <div class="isBlue">
-        <p></p>
-    </div>
-    <div class="logo">
-
-    </div>
-    <div class="text-container left-aligned">
-        <h4 class="longName">University of California, Santa Barbara</h4>
-        <h4 class="shortName">UCSB</h4><br>
-        <h4 class="longName">SMITE</h4> <br>
-        <h4 class="longName">0-0</h4>
-    </div>
-    <div class="score-container center-aligned">
-        <h1>Best Of 1</h1>
-        <h1 class="dateTime">1696201200</h1>
-        <!-- <h4></h4> -->
-    </div>
-    <div class="text-container right-aligned">
-        <h4 class="longName">University of South Alabama</h4>
-        <h4 class="shortName">USA</h4> <br>
-        <h4 class="longName">SMITE</h4> <br>
-        <h4 class="longName">0-0</h4>
-    </div>
-    <div class="logo">
-    </div>
-</div> 
-<div class="schedule containerSchedule" onclick="">
-    <div class="isBlue">
+    <div class="isYellow">
         <p></p>
     </div>
     <div class="logo">
@@ -47,34 +108,7 @@
     </div>
     <div class="score-container center-aligned">
         <h1>Best Of 1</h1>
-        <h1 class="dateTime">1696201200</h1>
-        <!-- <h4></h4> -->
-    </div>
-    <div class="text-container right-aligned">
-        <h4 class="longName">North Carolina State University</h4>
-        <h4 class="shortName">NCSU</h4> <br>
-        <h4 class="longName">SMITE</h4> <br>
-        <h4 class="longName">0-0</h4>
-    </div>
-    <div class="logo">
-    </div>
-</div> 
-<div class="schedule containerSchedule" onclick="">
-    <div class="isBlue">
-        <p></p>
-    </div>
-    <div class="logo">
-
-    </div>
-    <div class="text-container left-aligned">
-        <h4 class="longName">Texas A&M University</h4>
-        <h4 class="shortName">TAMU</h4><br>
-        <h4 class="longName">SMITE</h4> <br>
-        <h4 class="longName">0-0</h4>
-    </div>
-    <div class="score-container center-aligned">
-        <h1>Best Of 1</h1>
-        <h1 class="dateTime">1696204800</h1>
+        <h1 class="matchScore">0-0</h1>
         <!-- <h4></h4> -->
     </div>
     <div class="text-container right-aligned">
@@ -87,7 +121,7 @@
     </div>
 </div> 
 <div class="schedule containerSchedule" onclick="">
-    <div class="isBlue">
+    <div class="isYellow">
         <p></p>
     </div>
     <div class="logo">
@@ -101,7 +135,7 @@
     </div>
     <div class="score-container center-aligned">
         <h1>Best Of 1</h1>
-        <h1 class="dateTime">1696204800</h1>
+        <h1 class="matchScore">0-0</h1>
         <!-- <h4></h4> -->
     </div>
     <div class="text-container right-aligned">
@@ -275,94 +309,63 @@
     <div class="logo">
     </div>
 </div> 
+<div class="schedule containerSchedule" onclick="">
+    <div class="isBlue">
+        <p></p>
+    </div>
+    <div class="logo">
+
+    </div>
+    <div class="text-container left-aligned">
+        <h4 class="longName">University of Illinois Springfield</h4>
+        <h4 class="shortName">UIS</h4><br>
+        <h4 class="longName">VALORANT</h4> <br>
+        <h4 class="longName">0-0</h4>
+    </div>
+    <div class="score-container center-aligned">
+        <h1>Best Of 3</h1>
+        <h1 class="dateTime">1696287600</h1>
+        <!-- <h4></h4> -->
+    </div>
+    <div class="text-container right-aligned">
+        <h4 class="longName">Northern Illinois University</h4>
+        <h4 class="shortName">NIU</h4> <br>
+        <h4 class="longName">VALORANT</h4> <br>
+        <h4 class="longName">0-0</h4>
+    </div>
+    <div class="logo">
+    </div>
+</div> 
+<div class="schedule containerSchedule" onclick="">
+    <div class="isBlue">
+        <p></p>
+    </div>
+    <div class="logo">
+
+    </div>
+    <div class="text-container left-aligned">
+        <h4 class="longName">Indiana Wesleyan University</h4>
+        <h4 class="shortName">Varsity</h4><br>
+        <h4 class="longName">VALORANT</h4> <br>
+        <h4 class="longName">0-1</h4>
+    </div>
+    <div class="score-container center-aligned">
+        <h1>Best Of 3</h1>
+        <h1 class="dateTime">1696287600</h1>
+        <!-- <h4></h4> -->
+    </div>
+    <div class="text-container right-aligned">
+        <h4 class="longName">Kettering University</h4>
+        <h4 class="shortName">KU</h4> <br>
+        <h4 class="longName">VALORANT</h4> <br>
+        <h4 class="longName">0-1</h4>
+    </div>
+    <div class="logo">
+    </div>
+</div> 
+
 </div>
-    <style>
-.sect {
-    margin: auto;
-    font-family: Poppins;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: auto;
-    background-color: #000068;
-}
 
-.containerSchedule {
-    width: 100%;
-    height: 1.5in;
-    display: flex;
-    border: 10px solid #000068;
-    background-color: #f7f7f7;
-
-
-}
-
-.isBlue {
-    background-color: #00fcf1;
-    width: 2%;
-}
-
-.isYellow{
-    background-color: #fcff00;
-    width: 2%;
-}
-
-
-.logo {
-    width: 1in;
-    height: 1in;
-}
-
-.logo-img {
-    width: 1in;
-    height: 1in;
-}
-
-.text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 5px;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-    overflow: auto;
-    flex: 4;
-}
-
-.score-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-right: 2.5%;
-    flex: 2;
-}
-
-.left-aligned {
-    text-align: left;
-}
-
-.center-aligned {
-    text-align: center;
-}
-
-.right-aligned {
-    text-align: right;
-}
-
-h1,
-h2,
-h4 {
-    margin: 0;
-}
-
-.longName {
-    display: contents;
-}
-
-.shortName {
-    display: none;
-}
-</style>
 
 <script>
 function formatEpochTime(epochTime) {
@@ -371,7 +374,7 @@ function formatEpochTime(epochTime) {
     const hours = (date.getHours().toString().padStart(2, '0'))-offset;
     const minutes = date.getMinutes().toString().padStart(2, '0');
     if(hours > 12) {
-        return `${hours%12==0?12:hours%12}:${minutes} PM`;
+        return `${hours%12}:${minutes} PM`;
     }
     else{
         return `${hours%12}:${minutes} AM`;
@@ -379,7 +382,7 @@ function formatEpochTime(epochTime) {
 }
 function updateClassDate() {
     const classDateElements = document.querySelectorAll('.dateTime');
-    
+
     classDateElements.forEach((element) => {
         const epochTime = parseInt(element.textContent);
         if (!isNaN(epochTime)) {
@@ -388,6 +391,7 @@ function updateClassDate() {
     });
 }
 document.addEventListener('DOMContentLoaded', updateClassDate);
-</script>
+<script>
 </body>
+
 </html>
