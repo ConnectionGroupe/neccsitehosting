@@ -1,7 +1,7 @@
 .sect {
-    color: #000068;
     margin: auto;
     font-family: 'Poppins';
+    color: #000068;
     justify-content: center;
     align-items: center;
     height: auto;
@@ -9,22 +9,6 @@
     background-color: #000068;
 
 }
-
-
-.headSch {
-    color:#ffffff;
-    text-align: center;
-    font-size: 8em; background: #000068;
-    font-family: 'Poppins'
-}
-
-.headSch {
-    color:#ffffff;
-    text-align: center;
-    font-size: 8em; background: #000068;
-    font-family: 'Poppins'
-}
-
 
 .containerSchedule {
     width: 100%;
@@ -65,6 +49,13 @@ body::-webkit-scrollbar {
     height: 1in;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
 .text-container {
     display: flex;
     flex-direction: column;
@@ -98,12 +89,20 @@ body::-webkit-scrollbar {
 
 h1,
 h2,
-h4 {
+h2 {
     margin: 0;
+
 }
 
 .longName {
     display: contents;
+}
+
+.headSch {
+    color:#ffffff;
+    text-align: center;
+    font-size: 8em; background: #000068;
+    font-family: 'Poppins'
 }
 
 .shortName {
