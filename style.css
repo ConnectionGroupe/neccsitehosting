@@ -132,7 +132,7 @@ h4 {
 /* Your desktop styles here */
 
 /* Media query for screens 780px or less */
-@media (max-width: 780px) {
+@media (max-width: 1000px) {
     /* Styles for screens 780px or less */
 
     /* Modify styles for smaller screens */
