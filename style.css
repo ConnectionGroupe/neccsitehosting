@@ -1,6 +1,8 @@
-
+body{
+    background-color: #000068;
+    justify-content: center;
+}
 .sect {
-	background-color: #000068;
 	margin: auto;
 	font-family: Poppins;
 	justify-content: center;
@@ -40,11 +42,17 @@
 .logo {
 	width: 1in;
 	height: 1in;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo-img {
-	width: 1in;
-	height: 1in;
+    width: inherit;
+    height: inherit;
+    margin-top:  15%;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*margin-top: auto;*/
 }
 
 .text-container {
