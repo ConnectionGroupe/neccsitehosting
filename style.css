@@ -7,6 +7,7 @@
 	font-family: Poppins;
 	justify-content: center;
 	align-items: center;
+	color: #000068;
 	height: auto;
 	width: auto;
 	background-color: #000068;
@@ -24,11 +25,12 @@
 	display: flex;
 	border: 10px solid #000068;
 	background-color: #f7f7f7;
+	padding-left: 0.25%
 }
 .isBlue {
 	background-color: #00fcf1;
 	width: 2%;
-	padding-left: 2px;
+	padding-left: 5px;
 }
 .isYellow{
 	background-color: #fcff00;
@@ -57,6 +59,7 @@
 	text-overflow: ellipsis;
 	word-wrap: break-word;
 	overflow: auto;
+	color: #000068;
 	flex: 4;
 }
 .score-container {
@@ -64,6 +67,7 @@
 	flex-direction: column;
 	justify-content: space-around;
 	padding-right: 2.5%;
+	color: #000068;
 	flex: 2;
 }
 .left-aligned {
