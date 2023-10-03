@@ -28,7 +28,7 @@
 .isBlue {
 	background-color: #00fcf1;
 	width: 2%;
-	
+	padding-left: 2px;
 }
 .isYellow{
 	background-color: #fcff00;
