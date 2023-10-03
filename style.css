@@ -14,7 +14,8 @@
 .headSch {
     color:#ffffff;
     text-align: center;
-    font-size: 8em; background: #000068;
+    font-size: 8em; 
+    background: #000068;
     font-family: 'Poppins'
 }
 .containerSchedule {
@@ -27,10 +28,12 @@
 .isBlue {
 	background-color: #00fcf1;
 	width: 2%;
+	
 }
 .isYellow{
 	background-color: #fcff00;
 	width: 2%;
+	padding-left: 2px;
 }
 .logo {
 	width: 1in;
@@ -134,15 +137,23 @@ h4 {
 
     /* Modify styles for smaller screens */
     .headSch {
-        font-size: 3em; /* Reduce font size for smaller screens */
+        font-size: 3em; 
     }
-
+	
+    .score-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-right: 2.5%;
+        font-size: 1em; 
+	flex: 2;
+    }
     /* Hide the logo and its container */
     .logo,
     .logo-img {
         display: none;
     }
-
+    
     /* Simplify the match bar and match content */
     .matches-bar {
         flex-wrap: wrap;
