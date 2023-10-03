@@ -1,145 +1,158 @@
-/* General Styles */
-.schedbod {
+.schedbod{
     background-color: #000068;
     justify-content: center;
 }
-
 .sect {
-    margin: auto;
-    font-family: Poppins;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: auto;
-    background-color: #000068;
+	margin: auto;
+	font-family: Poppins;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: auto;
+	background-color: #000068;
 }
-
-/* Header Styles */
 .headSch {
-    color: #ffffff;
+    color:#ffffff;
     text-align: center;
-    font-size: 6em; /* Adjust font size for smaller screens */
-    background: #000068;
-    font-family: 'Poppins';
+    font-size: 8em; background: #000068;
+    font-family: 'Poppins'
 }
-
-/* Container Styles */
 .containerSchedule {
-    width: 100%;
-    height: 15%; /* Adjust height for flexibility */
-    display: flex;
-    flex-direction: column; /* Stack items vertically on small screens */
-    border: 10px solid #000068;
-    background-color: #f7f7f7;
+	width: 100%;
+	height: 1.5in;
+	display: flex;
+	border: 10px solid #000068;
+	background-color: #f7f7f7;
 }
-
 .isBlue {
 	background-color: #00fcf1;
 	width: 2%;
-	padding-left: 1%;
 }
-
 .isYellow{
 	background-color: #fcff00;
 	width: 2%;
-	padding-left: 1%;
 }
-
-/* Logo Styles */
 .logo {
-    width: 1in;
-    height: 1in;
+	width: 1in;
+	height: 1in;
     justify-content: center;
     align-items: center;
 }
-
 .logo-img {
     width: inherit;
     height: inherit;
-    margin-top: 15%;
+    margin-top:  15%;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*margin-top: auto;*/
 }
-
-/* Text and Score Container Styles */
-.text-container,
+.text-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 5px;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	overflow: auto;
+	flex: 4;
+}
 .score-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 5px;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-    overflow: auto;
-    flex: 4;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-right: 2.5%;
+	flex: 2;
 }
-
-.score-container {
-    padding-right: 2.5%;
-    flex: 2;
+.left-aligned {
+	text-align: left;
 }
-
-/* Alignment Styles */
-.left-aligned,
-.center-aligned,
+.center-aligned {
+	text-align: center;
+}
 .right-aligned {
-    text-align: center; /* Adjust alignment for small screens */
+	text-align: right;
 }
-
-/* Heading Styles */
 h1,
 h2,
 h4 {
-    margin: 0;
+	margin: 0;
+}
+.longName {
+	display: contents;
+}
+.shortName {
+	display: none;
 }
 
-/* Match Styles */
 .matches-bar {
-    display: flex;
-    background: #000068;
-    width: 100%;
-    flex-wrap: wrap; /* Allow matches to wrap on small screens */
+	display: flex;
+	background: #000068;
+	width: 100%;
 }
-
 .match {
-    flex: 1;
-    border: 1px solid #000000;
-    margin: 5px; /* Add margin between matches */
-    padding: 10px; /* Add padding to improve touchability */
+	flex: 1;
+	border: 1px solid #000000;
+	position: relative;
 }
-
 .match-status {
-    width: 10%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
-
 .live {
-    background-color: yellow;
+	background-color: yellow;
 }
-
 .not-live {
-    background-color: blue;
+	background-color: blue;
 }
-
 .match-content {
-    text-align: center;
+	margin-left: 10%;
+	text-align: center;
 }
-
-/* Team Styles */
 .team {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-
 .team-logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+.team-name, .team-score {
+	margin: 0 10px;
 }
 
-.team-name,
-.team-score {
-    margin: 0 10px;
+
+/* Your desktop styles here */
+
+/* Media query for screens 780px or less */
+@media (max-width: 780px) {
+    /* Styles for screens 780px or less */
+
+    /* Modify styles for smaller screens */
+    .headSch {
+        font-size: 3em; /* Reduce font size for smaller screens */
+    }
+
+    /* Hide the logo and its container */
+    .logo,
+    .logo-img {
+        display: none;
+    }
+
+    /* Simplify the match bar and match content */
+    .matches-bar {
+        flex-wrap: wrap;
+    }
+
+    .match {
+        flex: 1;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    /* Adjust other styles as needed */
 }
