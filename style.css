@@ -1,4 +1,4 @@
-body{
+.schedbod{
     background-color: #000068;
     justify-content: center;
 }
@@ -98,4 +98,45 @@ h4 {
 
 .shortName {
 	display: none;
+}
+
+.matches-bar {
+	display: flex;
+	background: #000068;
+	width: 100%;
+}
+.match {
+	flex: 1;
+	border: 1px solid #000000;
+	position: relative;
+}
+.match-status {
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.live {
+	background-color: yellow;
+}
+.not-live {
+	background-color: blue;
+}
+.match-content {
+	margin-left: 10%;
+	text-align: center;
+}
+.team {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.team-logo {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+.team-name, .team-score {
+	margin: 0 10px;
 }
