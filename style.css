@@ -1,6 +1,6 @@
 .schedbod{
-    background-color: #000068;
-    justify-content: center;
+	background-color: #000068;
+	justify-content: center;
 }
 .sect {
 	margin: auto;
@@ -13,11 +13,11 @@
 	background-color: #000068;
 }
 .headSch {
-    color:#ffffff;
-    text-align: center;
-    font-size: 8em; 
-    background: #000068;
-    font-family: 'Poppins'
+	color:#ffffff;
+	text-align: center;
+	font-size: 8em; 
+	background: #000068;
+	font-family: 'Poppins'
 }
 .containerSchedule {
 	width: 100%;
@@ -40,16 +40,13 @@
 .logo {
 	width: 1in;
 	height: 1in;
-    justify-content: center;
-    align-items: center;
+	justify-content: center;
+	align-items: center;
 }
 .logo-img {
-    width: inherit;
-    height: inherit;
-    margin-top:  15%;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    /*margin-top: auto;*/
+	width: inherit;
+	height: inherit;
+	margin-top:  15%;
 }
 .text-container {
 	display: flex;
@@ -84,6 +81,7 @@ h2,
 h4 {
 	margin: 0;
 }
+
 .longName {
 	display: contents;
 }
@@ -137,43 +135,44 @@ h4 {
 
 /* Media query for screens 780px or less */
 @media (max-width: 1000px) {
-    /* Styles for screens 780px or less */
-
-    /* Modify styles for smaller screens */
-    .headSch {
-        font-size: 3em; 
-    }
-    	
-    h1,
-    h2,
-    h4 {
-	font-size: 80%;
-    }
-
-    .score-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	padding-right: 2.5%;
-/*         font-size: 70%;  */
-	flex: 2;
-    }
-    /* Hide the logo and its container */
-    .logo,
-    .logo-img {
-        display: none;
-    }
-    
-    /* Simplify the match bar and match content */
-    .matches-bar {
-        flex-wrap: wrap;
-    }
-
-    .match {
-        flex: 1;
-        margin: 10px;
-        padding: 10px;
-    }
-
-    /* Adjust other styles as needed */
+	.headSch {
+		font-size: 3em; 
+	}
+	
+	.longName {
+		display: none;
+	}
+	.shortName {
+		display: contents;
+	}
+	
+	h1,
+	h2,
+	h4 {
+		font-size: 80%;
+	}
+	
+	.score-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding-right: 2.5%;
+		flex: 2;
+	}
+	
+	.logo,
+	.logo-img {
+		display: none;
+	}
+	
+	
+	.matches-bar {
+		flex-wrap: wrap;
+	}
+	
+	.match {
+		flex: 1;
+		margin: 10px;
+		padding: 10px;
+	}
 }
