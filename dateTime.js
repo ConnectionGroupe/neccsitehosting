@@ -10,7 +10,6 @@ function fromatDateMonthTime(epochTime) {
 	const offset = (date.getTimezoneOffset() / 60);
 	date.setHours(date.getHours()+5-offset)
 	return (date.toLocaleString([],{weekday: "long", month:'long', day:'2-digit'}))
-	}
 }
 
 function updateClassDate() {
