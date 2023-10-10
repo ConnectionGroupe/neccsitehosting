@@ -62,10 +62,9 @@
 .score-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
 	padding-right: 2.5%;
 	color: #000068;
-	flex: 2;
+	flex: 5;
 }
 .left-aligned {
 	text-align: left;
