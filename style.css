@@ -1,17 +1,19 @@
 body::-webkit-scrollbar {
   display: none;
-  overflow: clip;
+  
 }
 
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow: -moz-scrollbars-none;
+  
 }
 
 .schedbod {
     background-color: #000068;
     justify-content: center;
+    overflow: clip;
 }
 
 .sect {
