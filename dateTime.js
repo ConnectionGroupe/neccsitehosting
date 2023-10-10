@@ -5,11 +5,18 @@ function formatEpochTime(epochTime) {
 	return date.toLocaleString([],{hour: "2-digit", minute:'2-digit'})
 }
 
+function fromatShortDateMonthTime(epochTime) {
+	let date = new Date(epochTime * 1000);
+	const offset = (date.getTimezoneOffset() / 60);
+	date.setHours(date.getHours()+5-offset)
+	return (date.toLocaleString([],{weekday: "short", month:'short', day:'numeric'}))
+}
+
 function fromatDateMonthTime(epochTime) {
 	let date = new Date(epochTime * 1000);
 	const offset = (date.getTimezoneOffset() / 60);
 	date.setHours(date.getHours()+5-offset)
-	return (date.toLocaleString([],{weekday: "long", month:'long', day:'2-digit'}))
+	return (date.toLocaleString([],{weekday: "long", month:'long', day:'numeric'}))
 }
 
 function updateClassDate() {
@@ -30,5 +37,16 @@ function updateClassDate() {
 			element.textContent = fromatDateMonthTime(epochTime);
 		}
 	});
+	
+	const classDateShortElements = document.querySelectorAll('.dateShort');
+
+	classDateShortElements.forEach((element) => {
+		const epochTime = parseInt(element.textContent);
+		if (!isNaN(epochTime)) {
+			element.textContent = fromatShortDateMonthTime(epochTime);
+		}
+	});
 }
+
+
 document.addEventListener('DOMContentLoaded', updateClassDate);
