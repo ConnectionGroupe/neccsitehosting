@@ -13,7 +13,4 @@ function submitted(event) {
 
 }
 
-function add(){
-    f.addEventListener('input',submitted);
-}
-document.addEventListener('DOMContentLoaded', add);
+f.addEventListener('input',submitted);
