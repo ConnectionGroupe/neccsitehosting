@@ -1,132 +1,162 @@
-.schedbod{
-	background-color: #000068;
-	justify-content: center;
+.schedbod {
+    background-color: #000068;
+    justify-content: center;
 }
+
 .sect {
-	margin: auto;
-	font-family: Poppins;
-	justify-content: center;
-	align-items: center;
-	color: #000068;
-	height: auto;
-	width: auto;
-	background-color: #000068;
+    margin: auto;
+    font-family: Poppins;
+    justify-content: center;
+    align-items: center;
+    color: #000068;
+    height: auto;
+    width: auto;
+    background-color: #000068;
 }
+
 .headSch {
-	color:#ffffff;
-	text-align: center;
-	font-size: 8em; 
-	background: #000068;
-	font-family: 'Poppins'
+    color: #ffffff;
+    text-align: center;
+    font-size: 8em;
+    background: #000068;
+    font-family: 'Poppins'
 }
+
 .containerSchedule {
-	width: 100%;
-	height: 1.5in;
-	display: flex;
-	border: 10px solid #000068;
-	background-color: #f7f7f7;
-	padding-left: 0.25%
+    width: 100%;
+    height: 1.5in;
+    display: flex;
+    border: 10px solid #000068;
+    background-color: #f7f7f7;
+    padding-left: 0.25%
 }
+
 .isBlue {
-	background-color: #00fcf1;
-	width: 2%;
-	padding-left: 5px;
+    background-color: #00fcf1;
+    width: 2%;
+    padding-left: 5px;
 }
-.isYellow{
-	background-color: #fcff00;
-	width: 2%;
-	padding-left: 2px;
+
+.isYellow {
+    background-color: #fcff00;
+    width: 2%;
+    padding-left: 2px;
 }
+
 .logo {
-	width: 1in;
-	height: 1in;
-	justify-content: center;
-	align-items: center;
+    width: 1in;
+    height: 1in;
+    justify-content: center;
+    align-items: center;
 }
+
 .logo-img {
-	width: inherit;
-	height: inherit;
-	margin-top:  15%;
+    width: inherit;
+    height: inherit;
+    margin-top: 15%;
 }
+
 .text-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	padding: 5px;
-	text-overflow: ellipsis;
-	word-wrap: break-word;
-	overflow: auto;
-	color: #000068;
-	flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: auto;
+    color: #000068;
+    flex: 4;
 }
+
 .score-container {
-	display: flex;
-	flex-direction: column;
-	padding-right: 2.5%;
-	color: #000068;
-	flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 2.5%;
+    color: #000068;
+    flex: 4;
 }
+
 .left-aligned {
-	text-align: left;
+    text-align: left;
 }
+
 .center-aligned {
-	text-align: center;
+    text-align: center;
 }
+
 .right-aligned {
-	text-align: right;
+    text-align: right;
 }
+
 h1,
 h2,
 h4 {
-	margin: 0;
+    margin: 0;
+}
+
+.alwaysOn {
+    display: contents;
+    size: 1em;
 }
 
 .longName {
-	display: contents;
+    display: contents;
+    font-size: 1.2em;
 }
+
 .shortName {
-	display: none;
+    display: none;
 }
 
 .matches-bar {
-	display: flex;
-	background: #000068;
-	width: 100%;
+    display: flex;
+    background: #000068;
+    width: 100%;
 }
+
 .match {
-	flex: 1;
-	border: 1px solid #000000;
-	position: relative;
+    flex: 1;
+    border: 1px solid #000000;
+    position: relative;
 }
+
 .match-status {
-	width: 10%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
 .live {
-	background-color: yellow;
+    background-color: yellow;
 }
+
 .not-live {
-	background-color: blue;
+    background-color: blue;
 }
+
 .match-content {
-	margin-left: 10%;
-	text-align: center;
+    margin-left: 10%;
+    text-align: center;
 }
+
 .team {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .team-logo {
-	width: 50px;
-	height: 50px;
-	margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
-.team-name, .team-score {
-	margin: 0 10px;
+
+.team-name,
+.team-score {
+    margin: 0 10px;
 }
 
 
@@ -134,47 +164,52 @@ h4 {
 
 /* Media query for screens 780px or less */
 @media (max-width: 1100px) {
-	.headSch {
-		font-size: 3em; 
-	}
+    .headSch {
+        font-size: 3em;
+    }
 	
-	.longName {
-		display: none;
-		font-size: 1em;
-	}
-	.shortName {
-		display: contents;
-		
-	}
-	
-	h1,
-	h2,
-	h4 {
-		font-size: 1.5em;
-	}
-	
-	.score-container {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		padding-right: 2.5%;
-		flex: 2;
-		font-size: 1em;
-	}
-	
-	.logo,
-	.logo-img {
-		display: none;
-	}
-	
-	
-	.matches-bar {
-		flex-wrap: wrap;
-	}
-	
-	.match {
-		flex: 1;
-		margin: 10px;
-		padding: 10px;
-	}
+    .alwaysOn {
+	display: contents;
+	size: 1em;
+    }
+
+    .longName {
+        display: contents;
+        font-size: 1em;
+    }
+
+    .shortName {
+        display: none;
+    }
+
+    h1,
+    h2,
+    h4 {
+        font-size: 1.5em;
+    }
+
+    .score-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-right: 2.5%;
+        flex: 2;
+        font-size: 1em;
+    }
+
+    .logo,
+    .logo-img {
+        display: none;
+    }
+
+
+    .matches-bar {
+        flex-wrap: wrap;
+    }
+
+    .match {
+        flex: 1;
+        margin: 10px;
+        padding: 10px;
+    }
 }
