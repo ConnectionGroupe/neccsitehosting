@@ -13,4 +13,9 @@ function submitted(event) {
 
 }
 
-f.addEventListener('input',submitted);
+function add(){
+    const f = document.getElementById('form');
+    const q = document.getElementById('query');
+    f.addEventListener('input',submitted);
+}
+document.addEventListener('DOMContentLoaded', add);
