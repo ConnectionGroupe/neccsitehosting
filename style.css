@@ -122,6 +122,7 @@ h4 {
     display: none;
 }
 
+
 .matches-bar {
     display: flex;
     background: #000068;
@@ -187,20 +188,22 @@ h4 {
     }
 
     .longName {
+        display: none;
+    }
+
+    .shortName {
         display: contents;
         font-size: 1em;
     }
 
-    .shortName {
-        display: none;
-    }
-
+	
     h1,
     h2,
     h4 {
         font-size: 1.5em;
     }
 
+	
     .score-container {
         display: flex;
         flex-direction: column;
