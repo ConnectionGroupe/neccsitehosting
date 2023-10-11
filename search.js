@@ -1,7 +1,6 @@
-const f = document.getElementById('form');
-const q = document.getElementById('query');
-
 function submitted(event) {
+    const f = document.getElementById('form');
+    const q = document.getElementById('query');
     const x = document.querySelectorAll('.containerSchedule');
     x.forEach((element) => {
         const name = (element.id);
@@ -15,8 +14,6 @@ function submitted(event) {
 }
 
 function add(){
-    const f = document.getElementById('form');
-    const q = document.getElementById('query');
     f.addEventListener('input',submitted);
 }
 document.addEventListener('DOMContentLoaded', add);
