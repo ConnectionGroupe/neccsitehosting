@@ -1,3 +1,6 @@
+const f = document.getElementById('form');
+const q = document.getElementById('query');
+
 function submitted(event) {
     const x = document.querySelectorAll('.containerSchedule');
     x.forEach((element) => {
