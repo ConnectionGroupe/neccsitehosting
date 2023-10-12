@@ -1,1 +1,106 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar and Topbar Layout</title>
+    <link rel="stylesheet" href="standings.css">
+    <script src="standing_calc.js"></script>
+</head>
+<body>
+    <div id="Standings">
+        <h1>STANDINGS</h1>
+    </div>
+    <div id="mainPage">
+    <div id="sidebar">
+        <h2>Filter Search</h2>
+<table>
+<div class="dropdown">
+    <tr><label for="games">Games:</label></tr>
+    <tr><select style="width:100%;" id="games">
+    <option value="" disabled selected>Select a game</option><option value="rainbowsixsiege">Rainbow Six Siege</option>
+</select>
+</tr>
+</div>
+<div class="dropdown">
+    <tr><label for="divisions">Divisions:</label></tr>
+    <tr><select  style="width:100%;" id="divisions">
+    <option value="" disabled selected>Select a division</option>
+<option class="rainbowsixsiege dp" value="legends"> Legends</option>
+</select>
+</tr>
+</div>
+<div class="dropdown">
+    <tr><label for="regions">Regions:</label></tr>
+    <tr><select style="width:100%;" id="regions">
+    <option value="" disabled selected>Select a region</option>
+<option class="rainbowsixsiegelegends dp" value="legends">Legends</option>
+</select>
+</tr>
+</div>
+</table>
+</div><div id="content">
+<h1 style="margin-top: 0px;">Welcome to the dashboard</h1>
+<p>Select options from the sidebar and navigate using the topbar links.</p>
+
+<div class="leaderboard rainbowsixsiegelegendslegends">
+    <a class="position">0</a>
+    <img class="schoolLogo>{'imgURL': 'https://imgur.com/uhC3tJe.png', 'school': 'Grand Canyon University'}</a>
+    <a class="teamname">GCU</a>
+    <a class="winloss">1-0</a>
+</div>
+
+<div class="leaderboard rainbowsixsiegelegendslegends">
+    <a class="position">1</a>
+    <img class="schoolLogo>{'imgURL': 'https://i.imgur.com/DwAbxV9.png', 'school': 'The Ohio State University'}</a>
+    <a class="teamname">OSU Scarlet</a>
+    <a class="winloss">2-0</a>
+</div>
+
+<div class="leaderboard rainbowsixsiegelegendslegends">
+    <a class="position">2</a>
+    <img class="schoolLogo>{'imgURL': 'https://i.imgur.com/jtznTgy.png', 'school': 'Fisher College'}</a>
+    <a class="teamname">Fisher Falcons</a>
+    <a class="winloss">1-0</a>
+</div>
+
+<div class="leaderboard rainbowsixsiegelegendslegends">
+    <a class="position">3</a>
+    <img class="schoolLogo>{'imgURL': 'https://i.imgur.com/gGggQVz.png', 'school': 'University of Central Florida'}</a>
+    <a class="teamname">UCF Knights</a>
+    <a class="winloss">1-1</a>
+</div>
+
+<div class="leaderboard rainbowsixsiegelegendslegends">
+    <a class="position">4</a>
+    <img class="schoolLogo>{'imgURL': 'https://imgur.com/G8B3533.png', 'school': 'Texas A&M University'}</a>
+    <a class="teamname">Texas A&M Maroon</a>
+    <a class="winloss">1-1</a>
+</div>
+
+<div class="leaderboard rainbowsixsiegelegendslegends">
+    <a class="position">5</a>
+    <img class="schoolLogo>{'imgURL': 'https://i.imgur.com/NP0t192.png', 'school': 'St. Clair College'}</a>
+    <a class="teamname">St. Clair Saints</a>
+    <a class="winloss">1-1</a>
+</div>
+
+<div class="leaderboard rainbowsixsiegelegendslegends">
+    <a class="position">6</a>
+    <img class="schoolLogo>{'imgURL': 'https://i.imgur.com/2n0ik1i.png', 'school': 'University of Ottawa'}</a>
+    <a class="teamname">uOttawa Garnet</a>
+    <a class="winloss">0-2</a>
+</div>
+
+<div class="leaderboard rainbowsixsiegelegendslegends">
+    <a class="position">7</a>
+    <img class="schoolLogo>{'imgURL': 'https://i.imgur.com/xZZ5mFp.png', 'school': 'Columbia College'}</a>
+    <a class="teamname">Columbia College</a>
+    <a class="winloss">0-2</a>
+</div>
+
+</div>
+</div>
+</body>
+</html>
