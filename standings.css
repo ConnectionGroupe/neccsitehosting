@@ -79,10 +79,6 @@ body {
 }
 
 .leaderboard {
-    /*display: flex;
-    flex-direction: row;
-    padding-left: 20px;
-    border: #ffffff;*/
     height: 1.5in;
     display: flex;
     background-color: #f7f7f7;
@@ -91,16 +87,6 @@ body {
     margin-bottom: 10px;
 
 }
-
-
-
-/* .leaderboard a,
-.leaderboard text {
-    flex: 1 1 auto;
-    text-align: left;
-    color:#000068;
-    float: right;
-} */
 
 .position {
     display: flex;
@@ -130,10 +116,6 @@ body {
     align-items: center;
 
 }
-
-/*.leaderboard img {
-    flex: 0 0 35px;
-}*/
 
 /* Clear float after the sidebar and content */
 #mainPage::after {
