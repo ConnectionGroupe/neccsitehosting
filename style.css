@@ -1,244 +1,149 @@
-body::-webkit-scrollbar {
-  display: none;
-  
-}
-
-#form {
-    padding-left: 10px; 
-    padding-right: 10px;
-}
-
-#query {
-	width: 100%;
-	height: 50px; 
-	font-size: 30px; 
-	color: #000068;
-}
-
-
 body {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow: -moz-scrollbars-none;
-  
+    
+    font-family: Poppins, sans-serif;
+    margin: 0 auto;
+    padding: 0;
 }
 
-.schedbod {
-    background-color: #000068;
-    justify-content: center;
-    overflow: clip;
-}
-
-.sect {
-    margin: auto;
-    font-family: Poppins;
-    justify-content: center;
+#topbar {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px;
+    display: flex;
     align-items: center;
-    color: #000068;
-    height: auto;
-    width: auto;
+    justify-content: space-between;
+}
+
+#Standings {
+    display: flex;
     background-color: #000068;
+
 }
 
-.headSch {
-    color: #ffffff;
+#Standings h1 { /* This formats the STANDINGS text in the bar above */
     text-align: center;
-    font-size: 8em;
-    background: #000068;
-    font-family: 'Poppins'
+    color: #ffffff;
+    height: 6vh;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
 
-.containerSchedule {
-    width: 100% :-20px;
+#sidebar {
+    width: 25%;
+    height: 100vh;
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 2px 0px 5px rgba(1, 47, 253, 0.1);
+    float: left;
+}
+
+#sidebar .dropdown:first-child {
+    margin-top: 0  auto;
+}
+
+#sidebar h2 { /* This make the Filter Search Blue hex:#000068 */
+    text-align: center;
+    color:#000068;
+}
+
+#sidebar label { /* This make the Names above the dropdown's Blue hex:#000068 */
+    color: #000068;
+}
+
+#sidebar select { /* This makes the border around the dropdown's Blue hex:#000068 and changes the shape */
+    border-radius: 5px;
+    border-color: blue;
+    width: 200px;
+    border-bottom-right-radius: 0;
+}
+
+/* .mainPage {
+    float: left;
+    width: 100%; /* Add this 
+} */
+
+.dropdown {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#content {
+    padding-left:20px;
+    /* box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); */
+    background-color: #f5f5f5;
+    /* height: 100vh; */
+}
+
+.leaderboard {
+    /*display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    border: #ffffff;*/
     height: 1.5in;
     display: flex;
-    border: 10px solid #000068;
     background-color: #f7f7f7;
-    padding-left: 0.25%
+    padding-left: 0.25%;
+    box-shadow: 10px 10px #660404;
+    margin-bottom: 10px;
+
 }
 
-.isBlue {
-    background-color: #00fcf1;
-    width: 2%;
-    padding-left: 5px;
-}
 
-.isYellow {
-    background-color: #fcff00;
-    width: 2%;
-    padding-left: 2px;
-}
 
-.logo {
-    width: 1in;
-    height: 1in;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-img {
-    width: inherit;
-    height: inherit;
-    margin-top: 15%;
-}
-
-.text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 5px;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-    overflow: auto;
-    color: #000068;
-    flex: 4;
-}
-
-.score-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-right: 2.5%;
-    color: #000068;
-    flex: 4;
-}
-
-.left-aligned {
+/* .leaderboard a,
+.leaderboard text {
+    flex: 1 1 auto;
     text-align: left;
-}
+    color:#000068;
+    float: right;
+} */
 
-.center-aligned {
-    text-align: center;
-}
-
-.right-aligned {
-    text-align: right;
-}
-
-h1,
-h2,
-h4 {
-    margin: 0;
-}
-
-.alwaysOn {
-    display: contents;
-    size: 1.2em;
-}
-
-.longName {
-    display: contents;
-    font-size: 1.2em;
-}
-
-.shortName {
-    display: none;
-}
-
-
-.matches-bar {
+.position {
     display: flex;
-    background: #000068;
-    width: 100%;
-}
-
-.match {
-    flex: 1;
-    border: 1px solid #000000;
-    position: relative;
-}
-
-.match-status {
-    width: 10%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.live {
-    background-color: yellow;
-}
-
-.not-live {
-    background-color: blue;
-}
-
-.match-content {
-    margin-left: 10%;
-    text-align: center;
-}
-
-.team {
-    display: flex;
+    padding-left: 20px;
+    flex: auto;
+    justify-content: left;
     align-items: center;
-    justify-content: center;
 }
 
-.team-logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+.teamname {
+    display: flex; 
+    flex: 25;
+    align-items: center;
 }
 
-.team-name,
-.team-score {
-    margin: 0 10px;
+.schoolLogo {
+    height: 100px;
+    width: 100px;
+    padding-right: 3%;
+    padding-top: 1.25%;
 }
 
+.winloss {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
 
-/* Your desktop styles here */
+/*.leaderboard img {
+    flex: 0 0 35px;
+}*/
 
-/* Media query for screens 780px or less */
-@media (max-width: 1100px) {
-    .headSch {
-        font-size: 3em;
-    }
-	
-    .alwaysOn {
-	display: contents;
-	size: 1em;
-    }
+/* Clear float after the sidebar and content */
+#mainPage::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-    .longName {
-        display: none;
-    }
-
-    .shortName {
-        display: contents;
-        font-size: 1em;
-    }
-
-	
-    h1,
-    h2,
-    h4 {
-        font-size: 1.5em;
-    }
-
-	
-    .score-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding-right: 2.5%;
-        flex: 2;
-        font-size: 1em;
-    }
-
-    .logo,
-    .logo-img {
-        display: none;
-    }
-
-
-    .matches-bar {
-        flex-wrap: wrap;
-    }
-
-    .match {
-        flex: 1;
-        margin: 10px;
-        padding: 10px;
-    }
+/* Reset default table margins */
+table {
+    margin: 0 auto;
+    padding: 0 auto;
+    border-spacing: 0 auto;
 }
