@@ -1,8 +1,19 @@
 body {
 
-    font-family: Poppins, sans-serif;
+    font-family: Poppins;
     margin: 0 auto;
     padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+
+}
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: -moz-scrollbars-none;
+
 }
 
 #topbar {
@@ -32,12 +43,13 @@ body {
 
 #sidebar {
     width: 25%;
-    height: 100vh;
+    height: 150vh;
     background-color: #ffffff;
     padding-left: 20px;
     padding-right: 20px;
     box-shadow: 2px 0px 5px rgba(1, 47, 253, 0.1);
     float: left;
+    overflow:clip;
 }
 
 #sidebar .dropdown:first-child {
@@ -56,7 +68,7 @@ body {
 #sidebar select { /* This makes the border around the dropdown's Blue hex:#000068 and changes the shape */
     border-radius: 5px;
     border-color: blue;
-    width: 200px;
+    width: 100%;
     border-bottom-right-radius: 0;
 }
 
@@ -79,11 +91,11 @@ body {
 }
 
 .leaderboard {
-    height: 1.5in;
+    height: 1.25in;
     display: flex;
     background-color: #f7f7f7;
     padding-left: 0.25%;
-    box-shadow: 10px 10px #660404;
+    border-bottom: 10px #000068;
     margin-bottom: 10px;
 
 }
@@ -94,17 +106,25 @@ body {
     flex: auto;
     justify-content: left;
     align-items: center;
+    font-size:-webkit-xxx-large;
+    font-weight:700;
+    
 }
 
 .teamname {
     display: flex;
     flex: 25;
     align-items: center;
+    font-size: 30px;
+    width: auto;
+    padding-left:2%;
+    text-overflow:ellipsis;
+    
 }
 
 .schoolLogo {
-    height: 50px;
-    width: 50px;
+    height: 15%-webkit-fill-available;
+    width: 15%-webkit-fill-available;
     display: flex;
     float: left;
     align-items: center;
@@ -114,6 +134,11 @@ body {
     display: flex;
     justify-content: right;
     align-items: center;
+    width:15%;
+    font-size:-webkit-xxx-large;
+    padding-right: 10px;
+    font-weight:500;
+    
 
 }
 
@@ -129,4 +154,104 @@ table {
     margin: 0 auto;
     padding: 0 auto;
     border-spacing: 0 auto;
+}
+
+.reset_button {
+
+    width: 100%;
+    margin-top:25px;
+    background-color: #000068;
+    color:white;
+    font-weight:700;
+}
+
+@media (max-width: 1100px) {
+body {
+    width: 100%;
+}
+    
+#sidebar {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 2px 0px 5px rgba(1, 47, 253, 0.1);
+    overflow:clip;
+    padding-bottom:10px;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+#sidebar .dropdown {
+    margin-top: 0  auto;
+    width:90%;
+    
+}
+
+#sidebar h2 { /* This make the Filter Search Blue hex:#000068 */
+    text-align: center;
+    color:#000068;
+}
+
+#sidebar label { /* This make the Names above the dropdown's Blue hex:#000068 */
+    color: #000068;
+}
+
+#sidebar select { /* This makes the border around the dropdown's Blue hex:#000068 and changes the shape */
+    border-radius: 5px;
+    border-color: blue;
+    width:100%;
+    border-bottom-right-radius: 0;
+    height:50px;
+}
+#content {
+    width:100%;
+}
+
+.leaderboard {
+    height: 1.25in;
+    display: flex;
+    background-color: #f7f7f7;
+}
+
+.position {
+    display: flex;
+    flex: auto;
+    justify-content: left;
+    align-items: center;
+    font-size:-webkit-xxx-large;
+    font-weight:700;
+    
+}
+
+.teamname {
+    display: flex;
+    flex: 25;
+    align-items: center;
+    font-size: 30px;
+    width: auto;
+    padding-left:2%;
+    text-overflow:ellipsis;
+    
+}
+
+.schoolLogo {
+    height: 15%-webkit-fill-available;
+    width: 15%-webkit-fill-available;
+    display: flex;
+    float: left;
+    align-items: center;
+    
+}
+
+.winloss {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width:15%;
+    font-size:-webkit-xxx-large;
+    font-weight:500;
+    
+
+}
+
 }
