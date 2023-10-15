@@ -2,10 +2,9 @@ function update(){
     const game = document.getElementById('games');
     const div = document.getElementById('divisions');
     const regions = document.getElementById('regions');
-    const x = (game.value+div.value+regions.value);
-    console.log(x)
+    const comp_stag = (game.value+div.value+regions.value);
     document.querySelectorAll('.leaderboard').forEach((element) => {
-        if(element.className.replace('leaderboard ','') === x){
+        if(element.className.replace('leaderboard ','') === comp_stag){
             element.style = 'display: content;'
         }
         else{
