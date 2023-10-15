@@ -14,8 +14,11 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow: -moz-scrollbars-none;
-  background-color: #000068
-
+  background-color: #000068;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
 }
 .schedbod {
     background-color: #000068;
