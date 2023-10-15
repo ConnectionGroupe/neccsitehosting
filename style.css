@@ -1,283 +1,206 @@
-body {
-
-    font-family: Poppins;
-    margin: 0 auto;
-    padding: 0;
-}
-
 body::-webkit-scrollbar {
   display: none;
 
 }
+
+#form {
+    padding-left: 10px; 
+    padding-right: 10px;
+}
+
+#query {
+	width: 100%;
+	height: 50px; 
+	font-size: 30px; 
+	color: #000068;
+}
+
+
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow: -moz-scrollbars-none;
 
 }
-
-#topbar {
-    background-color: #ffffff;
-    color: white;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#Standings {
-    display: flex;
+.schedbod {
     background-color: #000068;
-
+    justify-content: center;
+    overflow: clip;
+}
+.sect {
+    margin: auto;
+    font-family: Poppins;
+    justify-content: center;
+    align-items: center;
+    color: #000068;
+    height: auto;
+    width: auto;
+    background-color: #000068;
+}
+.headSch {
+    color: #ffffff;
+    text-align: center;
+    font-size: 8em;
+    background: #000068;
+    font-family: 'Poppins'
 }
 
-#Standings h1 { /* This formats the STANDINGS text in the bar above */
-    text-align: center;
-    color: #ffffff;
-    height: 6vh;
+.containerSchedule {
+    width: 100% :-20px;
+    height: 1.5in;
     display: flex;
-    margin: 0 auto;
+    border: 10px solid #000068;
+    background-color: #f7f7f7;
+    padding-left: 0.25%
+}
+.isBlue {
+    background-color: #00fcf1;
+    width: 2%;
+    padding-left: 5px;
+}
+.isYellow {
+    background-color: #fcff00;
+    width: 2%;
+    padding-left: 2px;
+}
+.logo {
+    width: 1in;
+    height: 1in;
+    justify-content: center;
+    align-items: center;
+}
+.logo-img {
+    width: inherit;
+    height: inherit;
+    margin-top: 15%;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: auto;
+    color: #000068;
+    flex: 4;
+}
+.score-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 2.5%;
+    color: #000068;
+    flex: 4;
+}
+.left-aligned {
+    text-align: left;
+}
+.center-aligned {
+    text-align: center;
+}
+.right-aligned {
+    text-align: right;
+}
+h1,
+h2,
+h4 {
+    margin: 0;
+}
+.alwaysOn {
+    display: contents;
+    size: 1.2em;
+}
+.longName {
+    display: contents;
+    font-size: 1.2em;
+}
+.shortName {
+    display: none;
+}
+.matches-bar {
+    display: flex;
+    background: #000068;
+    width: 100%;
+}
+.match {
+    flex: 1;
+    border: 1px solid #000000;
+    position: relative;
+}
+.match-status {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.live {
+    background-color: yellow;
+}
+.not-live {
+    background-color: blue;
+}
+.match-content {
+    margin-left: 10%;
+    text-align: center;
+}
+.team {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-
-#sidebar {
-    width: 25%;
-    height: 150vh;
-    background-color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-shadow: 2px 0px 5px rgba(1, 47, 253, 0.1);
-    float: left;
-    overflow:clip;
+.team-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
-
-#sidebar .dropdown:first-child {
-    margin-top: 0  auto;
+.team-name,
+.team-score {
+    margin: 0 10px;
 }
+/* Your desktop styles here */
+/* Media query for screens 780px or less */
+@media (max-width: 1100px) {
+    .headSch {
+        font-size: 3em;
+    }
 
-#sidebar h2 { /* This make the Filter Search Blue hex:#000068 */
-    text-align: center;
-    color:#000068;
-}
+    .alwaysOn {
+	display: contents;
+	size: 1em;
+    }
+    .longName {
+        display: none;
+    }
+    .shortName {
+        display: contents;
+        font-size: 1em;
+    }
 
-#sidebar label { /* This make the Names above the dropdown's Blue hex:#000068 */
-    color: #000068;
-}
+    h1,
+    h2,
+    h4 {
+        font-size: 1.5em;
+    }
 
-#sidebar select { /* This makes the border around the dropdown's Blue hex:#000068 and changes the shape */
-    border-radius: 5px;
-    border-color: blue;
-    width: 100%;
-    border-bottom-right-radius: 0;
-}
-
-/* .mainPage {
-    float: left;
-    width: 100%; /* Add this
-} */
-
-.dropdown {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-}
-
-#content {
-    padding-left:20px;
-    /* box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); */
-    background-color: #f5f5f5;
-    /* height: 100vh; */
-}
-
-.leaderboard {
-    height: 1.25in;
-    display: flex;
-    background-color: #f7f7f7;
-    padding-left: 0.25%;
-    border-bottom: 10px #000068;
-    margin-bottom: 10px;
-
-}
-
-.position {
-    display: flex;
-    padding-left: 20px;
-    flex: auto;
-    /* justify-content: left; */
-    align-items: center;
-    font-size:-webkit-xxx-large;
-    font-weight:700;
-}
-
-.teamname {
-    display: flex;
-    flex: 25;
-    align-items: center;
-    font-size: 30px;
-    width: auto;
-    padding-left:2%;
-    text-overflow:ellipsis;
-    
-}
-
-.schoolLogo {
-    height: 15%-webkit-fill-available;
-    width: 15%-webkit-fill-available;
-    display: flex;
-    float: left;
-    align-items: center;
-}
-
-.winloss {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    width:20%;
-    font-size:-webkit-xxx-large;
-    padding-right: 10px;
-    font-weight:500;
-    
-
-}
-
-/* Clear float after the sidebar and content */
-#mainPage::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Reset default table margins */
-table {
-    margin: 0 auto;
-    padding: 0 auto;
-    border-spacing: 0 auto;
-}
-
-.reset_button {
-
-    width: 100%;
-    margin-top:25px;
-    background-color: #000068;
-    color:white;
-    font-weight:700;
-}
-
-@media (max-width: 600px) {
-	body {
-	    width: 100%;
-	    
-	}
-	    
-	#sidebar {
-	    width: 100%;
-	    height: auto;
-	    background-color: #ffffff;
-	    box-shadow: 2px 0px 5px rgba(1, 47, 253, 0.1);
-	    overflow:clip;
-	    padding-bottom:10px;
-	    padding-left:0px;
-	    padding-right:0px;
-	}
-	
-	#sidebar .dropdown {
-	    margin-top: 0  auto;
-	    width:100%;
-	    
-	}
-	
-	#sidebar h2 { /* This make the Filter Search Blue hex:#000068 */
-	    text-align: center;
-	    color:#000068;
-	}
-	
-	#sidebar label { /* This make the Names above the dropdown's Blue hex:#000068 */
-	    color: #000068;
-	}
-	
-	#sidebar select { /* This makes the border around the dropdown's Blue hex:#000068 and changes the shape */
-	    border-radius: 5px;
-	    border-color: blue;
-	    width:100%;
-	    border-bottom-right-radius: 0;
-	    height:50px;
-	}
-	#content {
-	    width:100%;
-	}
-	
-	.leaderboard {
-	    height: 1.25in;
-	    display: flex;
-	    background-color: #f7f7f7;
-	    padding-left: 0%;
-	    border-bottom: 10px #000068;
-	    margin-bottom: 10px;
-	    width:100%;
-	
-	}
-	
-	.position {
-	    display: flex;
-	    padding-left: 0px;
-	    /* flex: none; */
-	     /* justify-content: center;  */
-	    align-items: center;
-	    font-size:-webkit-xxx-large;
-	    font-weight:700;
-	    width:23%;
-	    margin-left:5%
-	}
-	
-	.teamname {
-	    /* display: flex; */
-	    flex: 0;
-	    align-items: center;
-	    font-size: 30px;
-	    width: auto;
-	    padding-left:2%;
-	    text-overflow:none;
-	    display:none;
-	    
-	}
-	
-	.schoolLogo {
-	    height: auto;
-	    width: 33%;
-	    display: flex;
-	    float: left;
-	    align-items: center;
-	}
-	
-	.winloss {
-	    /* display: contents; */
-	    justify-content: right;
-	    align-items: center;
-	    width:33%;
-	    font-size:-webkit-xxx-large;
-	    padding-right: 10px;
-	    font-weight:700;
-	    float:right;
-	}
-	
-	    #content {
-	    padding-left:0px;
-	    margin:5px;
-	    /* box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); */
-	    background-color: #f5f5f5;
-	    /* height: 100vh; */
-	    text-align:center;
-	}
-	
-	.reset_button {
-	
-	    width: 100%;
-	    margin-top:25px;
-	    background-color: #000068;
-	    color:white;
-	    font-weight:700;
-	    height:50px;
-	}
-
-}
+    .score-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-right: 2.5%;
+        flex: 2;
+        font-size: 1em;
+    }
+    .logo,
+    .logo-img {
+        display: none;
+    }
+    .matches-bar {
+        flex-wrap: wrap;
+    }
+    .match {
+        flex: 1;
+        margin: 10px;
+        padding: 10px;
+    }
