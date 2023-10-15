@@ -2,10 +2,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-#form {
-    margin: 10px; 
-}
-
 #query {
 	width: 100%;
 	height: 50px; 
