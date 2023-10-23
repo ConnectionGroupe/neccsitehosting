@@ -165,119 +165,119 @@ table {
 }
 
 @media (max-width: 600px) {
-    body {
-        width: 100%;
-        
-    }
-        
-    #sidebar {
-        width: 100%;
-        height: auto;
-        background-color: #ffffff;
-        box-shadow: 2px 0px 5px rgba(1, 47, 253, 0.1);
-        overflow:clip;
-        padding-bottom:10px;
-        padding-left:0px;
-        padding-right:0px;
-    }
+body {
+    width: 100%;
     
-    #sidebar .dropdown {
-        margin-top: 0  auto;
-        width:100%;
-        
-    }
+}
     
-    #sidebar h2 { /* This make the Filter Search Blue hex:#000068 */
-        text-align: center;
-        color:#000068;
-    }
+#sidebar {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 2px 0px 5px rgba(1, 47, 253, 0.1);
+    overflow:clip;
+    padding-bottom:10px;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+#sidebar .dropdown {
+    margin-top: 0  auto;
+    width:100%;
     
-    #sidebar label { /* This make the Names above the dropdown's Blue hex:#000068 */
-        color: #000068;
-    }
+}
+
+#sidebar h2 { /* This make the Filter Search Blue hex:#000068 */
+    text-align: center;
+    color:#000068;
+}
+
+#sidebar label { /* This make the Names above the dropdown's Blue hex:#000068 */
+    color: #000068;
+}
+
+#sidebar select { /* This makes the border around the dropdown's Blue hex:#000068 and changes the shape */
+    border-radius: 5px;
+    border-color: blue;
+    width:100%;
+    border-bottom-right-radius: 0;
+    height:50px;
+}
+#content {
+    width:100%;
+}
+
+.leaderboard {
+    height: 1.25in;
+    display: flex;
+    background-color: #f7f7f7;
+    padding-left: 0%;
+    border-bottom: 10px #000068;
+    margin-bottom: 10px;
+    width:100%;
+
+}
+
+.position {
+    display: flex;
+    padding-left: 0px;
+    /* flex: none; */
+     /* justify-content: center;  */
+    align-items: center;
+    font-size:-webkit-xxx-large;
+    font-weight:700;
+    width:23%;
+    margin-left:5%
+}
+
+.teamname {
+    /* display: flex; */
+    flex: 0;
+    align-items: center;
+    font-size: 30px;
+    width: auto;
+    padding-left:2%;
+    text-overflow:none;
+    display:none;
     
-    #sidebar select { /* This makes the border around the dropdown's Blue hex:#000068 and changes the shape */
-        border-radius: 5px;
-        border-color: blue;
-        width:100%;
-        border-bottom-right-radius: 0;
-        height:50px;
-    }
+}
+
+.schoolLogo {
+    height: auto;
+    width: 33%;
+    display: flex;
+    float: left;
+    align-items: center;
+}
+
+.winloss {
+    /* display: contents; */
+    justify-content: right;
+    align-items: center;
+    width:33%;
+    font-size:-webkit-xxx-large;
+    padding-right: 10px;
+    font-weight:700;
+    float:right;
+}
+
     #content {
-        width:100%;
-    }
-    
-    .leaderboard {
-        height: 1.25in;
-        display: flex;
-        background-color: #f7f7f7;
-        padding-left: 0%;
-        border-bottom: 10px #000068;
-        margin-bottom: 10px;
-        width:100%;
-    
-    }
-    
-    .position {
-        display: flex;
-        padding-left: 0px;
-        /* flex: none; */
-         /* justify-content: center;  */
-        align-items: center;
-        font-size:-webkit-xxx-large;
-        font-weight:700;
-        width:23%;
-        margin-left:5%
-    }
-    
-    .teamname {
-        /* display: flex; */
-        flex: 0;
-        align-items: center;
-        font-size: 30px;
-        width: auto;
-        padding-left:2%;
-        text-overflow:none;
-        display:none;
-        
-    }
-    
-    .schoolLogo {
-        height: auto;
-        width: 33%;
-        display: flex;
-        float: left;
-        align-items: center;
-    }
-    
-    .winloss {
-        /* display: contents; */
-        justify-content: right;
-        align-items: center;
-        width:33%;
-        font-size:-webkit-xxx-large;
-        padding-right: 10px;
-        font-weight:700;
-        float:right;
-    }
-    
-        #content {
-        padding-left:0px;
-        margin:5px;
-        /* box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); */
-        background-color: #f5f5f5;
-        /* height: 100vh; */
-        text-align:center;
-    }
-    
-    .reset_button {
-    
-        width: 100%;
-        margin-top:25px;
-        background-color: #000068;
-        color:white;
-        font-weight:700;
-        height:50px;
-    }
+    padding-left:0px;
+    margin:5px;
+    /* box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); */
+    background-color: #f5f5f5;
+    /* height: 100vh; */
+    text-align:center;
+}
+
+.reset_button {
+
+    width: 100%;
+    margin-top:25px;
+    background-color: #000068;
+    color:white;
+    font-weight:700;
+    height:50px;
+}
 
 }
