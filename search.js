@@ -4,7 +4,7 @@ function submitted(event) {
     const x = document.querySelectorAll('.containerSchedule');
     x.forEach((element) => {
         const name = (element.id);
-        if (name.toLowerCase().includes(q.value.toLowerCase()) || name.toLowerCase().includes(g.value.toLowerCase())) {
+        if (name.toLowerCase().includes(q.value.toLowerCase())) {
             element.setAttribute('style', 'display:content;')
         } else {
             element.setAttribute('style', 'display:none;')
