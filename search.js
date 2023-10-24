@@ -9,6 +9,18 @@ function submitted(event) {
             element.setAttribute('style', 'display:none;')
         }
     });
+    
+    const q = document.getElementById('games');
+    const g = document.querySelectorAll('.game');
+    g.forEach((element) => {
+        const name = (element.value);
+        if (name.toLowerCase().includes(q.value.toLowerCase())) {
+            element.setAttribute('style', 'display:content;')
+        } else {
+            element.setAttribute('style', 'display:none;')
+        }
+    });
+    
 
 }
 
