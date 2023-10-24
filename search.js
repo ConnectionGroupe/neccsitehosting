@@ -10,17 +10,18 @@ function submitted(event) {
         }
     });
     
-    const q = document.getElementById('games');
-    const g = document.querySelectorAll('.game');
-    g.forEach((element) => {
-        const name = (element.value);
+    const g = document.getElementById('games');
+    const game = document.querySelectorAll('.game');
+    game.forEach((element) => {
+        const name = (element.outterHTML);
         if (name.toLowerCase().includes(q.value.toLowerCase())) {
             element.setAttribute('style', 'display:content;')
         } else {
             element.setAttribute('style', 'display:none;')
         }
     });
-    
+
+
 
 }
 
