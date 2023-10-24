@@ -1,28 +1,15 @@
 function submitted(event) {
     const q = document.getElementById('query');
+    const g = document.getElementById('games');
     const x = document.querySelectorAll('.containerSchedule');
     x.forEach((element) => {
         const name = (element.id);
-        if (name.toLowerCase().includes(q.value.toLowerCase())) {
+        if (name.toLowerCase().includes(q.value.toLowerCase()) || name.toLowerCase().includes(g.value.toLowerCase())) {
             element.setAttribute('style', 'display:content;')
         } else {
             element.setAttribute('style', 'display:none;')
         }
     });
-    
-    const g = document.getElementById('games');
-    const game = document.querySelectorAll('.game');
-    game.forEach((element) => {
-        const name = (element.outterHTML);
-        if (name.toLowerCase().includes(q.value.toLowerCase())) {
-            element.setAttribute('style', 'display:content;')
-        } else {
-            element.setAttribute('style', 'display:none;')
-        }
-    });
-
-
-
 }
 
 function add(){
