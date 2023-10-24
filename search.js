@@ -4,7 +4,7 @@ function submitted(event) {
     const x = document.querySelectorAll('.containerSchedule');
     x.forEach((element) => {
         const name = (element.id);
-        if (name.toLowerCase().includes(q.value.toLowerCase())) {
+        if ((name.toLowerCase().includes(q.value.toLowerCase())) && (name.toLowerCase().includes(g.value.toLowerCase()))) { 
             element.setAttribute('style', 'display:content;')
         } else {
             element.setAttribute('style', 'display:none;')
@@ -13,7 +13,7 @@ function submitted(event) {
 }
 
 function add(){
-    const f = document.getElementById('form');
-    f.addEventListener('input',submitted);
+    document.getElementById('form').addEventListener('input',submitted);
+    document.getElementById('formGames').addEventListener('input',submitted)
 }
 document.addEventListener('DOMContentLoaded', add);
